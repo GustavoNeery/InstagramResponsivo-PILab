@@ -32,10 +32,12 @@ body {
   padding-left: 30px;
 }
 
-.web {
+.instagram-name-web {
   padding-top: 15px;
   padding-left: 3px;
 }
+
+
 
 input {
   width: 215px;
@@ -52,7 +54,11 @@ input {
 
 .right-header {
   padding-top: 15px;
-  margin-left: 214px;
+}
+
+.paper-plane {
+  padding-top: 15px;
+  margin-left: 213px;
 }
 
 .right-icons {
@@ -295,6 +301,7 @@ main {
   font-size: 12px;
   line-height: 14px;
   color: #262626;
+  margin-left: 12px;
 }
 
 .profile-follow {
@@ -312,12 +319,31 @@ main {
   padding-top: 10px;
 }
 
+.profile-follow2 img{
+  width: 32px;
+  height: 32px;
+  left: 858px;
+  top: 318px;
+  background: url(.png);
+  border-radius: 16px;
+}
+
+.profile-follow2 {
+  display: flex;
+  padding-right: 150px;
+  padding-top: 15px;
+}
+
 .profile-follow span{
   padding-left: 10px;
 }
 
 .span-suggestions2 {
   padding-top: 10px;
+}
+
+.span-suggestions3 {
+  padding-left: 2px;
 }
 
 .redbullracing {
@@ -347,6 +373,21 @@ main {
   padding-right: 20px;
 }
 
+.follow-you-span2 {
+  width: 143px;
+  height: 11px;
+  left: 901px;
+  top: 244px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8E8E8E;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
 .follow-span {
   width: 36px;
   height: 11px;
@@ -360,4 +401,108 @@ main {
   color: #139EF2;
   margin-left: 180px;
   margin-top: 20px;
+}
+
+.follow-span2 {
+  width: 36px;
+  height: 11px;
+  left: 1114px;
+  top: 235px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #139EF2;
+  margin-left: 189px;
+  margin-top: 13px;
+}
+
+.p1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #C7C7C7;
+  padding-top: 85px;
+}
+
+.p2 {
+  width: 300px;
+  height: 14px;
+  left: 858px;
+  top: 540px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  
+  color: #C7C7C7;
+}
+
+.instagram-name-mobile{
+  margin-left: 150px;
+}
+
+@media (min-width: 614px) {
+  .instagram-name-mobile{
+      display: none;
+  }
+
+  .right-header {
+    display: flex;
+  }
+}
+
+@media (max-width: 935px){
+  .foryou-right {
+    display: none;
+  }
+  .suggestions{
+    display: none;
+  }
+  main{
+    margin-left: 150px;
+    padding-left: 150px;
+  }
+  header{
+    padding-left: 60px;
+  }
+
+}
+
+@media (max-width: 613px){
+  .instagram-name-web{
+      display: none;
+  }
+  .rect {
+    display: none;
+  }
+  input{
+    display: none;
+  }
+  .right-header{
+    display: none;
+  }
+
+  .foryou-right {
+    display: none;
+  }
+
+  .suggestions{
+    display: none;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  main{
+    padding-left: 10px;
+  }
+
 }
