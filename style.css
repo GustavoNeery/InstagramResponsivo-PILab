@@ -7,10 +7,17 @@ header {
 }
 
 body {
-  background: white;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 614px;
 }
 
 .left-header {
@@ -37,15 +44,13 @@ body {
   padding-left: 3px;
 }
 
-
-
 input {
   width: 215px;
   height: 28px;
   left: 575px;
   top: 13px;
-  background: #FAFAFA;
-  border: 1px solid #DBDBDB;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
   box-sizing: border-box;
   border-radius: 3px;
   margin-left: 214px;
@@ -69,12 +74,22 @@ input {
 .line {
   height: 1px;
   width: 100%;
-  background: #E6E6E6;
+  background: #e6e6e6;
   margin: 15px 0;
 }
 
 main {
-  padding-left: 465px;
+  display: flex;
+  margin: 34px auto;
+  margin-left: 450px;
+}
+
+.column-2 {
+  width: 300px;
+  height: 700px;
+  margin-left: 29px;
+  padding-right: 100px;
+  margin-top: 30px;
 }
 
 .stories {
@@ -82,8 +97,8 @@ main {
   height: 118px;
   left: 215px;
   top: 88px;
-  background: #FFFFFF;
-  border: 1px solid #DBDBDB;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
   box-sizing: border-box;
   border-radius: 3px;
   padding-top: 23px;
@@ -127,7 +142,7 @@ main {
   right: 9.38%;
   top: 9.38%;
   bottom: 9.38%;
-  background: #FFFFFF;
+  background: #ffffff;
   margin-top: 25px;
   color: rgb(209, 209, 209);
 }
@@ -138,8 +153,8 @@ main {
   height: 749px;
   left: 215px;
   top: 230px;
-  background: #FFFFFF;
-  border: 1px solid #DBDBDB;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -155,7 +170,7 @@ main {
   width: 32px;
   height: 32px;
   left: 232px;
-  top: 245px; 
+  top: 245px;
   background: url(.png);
   border-radius: 16px;
 }
@@ -179,7 +194,7 @@ main {
 .post-header ion-icon {
   padding-left: 410px;
   padding-bottom: 18.5px;
-  padding-top: 22.5px
+  padding-top: 22.5px;
 }
 
 .icon-below-post {
@@ -225,132 +240,38 @@ main {
   display: flex;
 }
 
-.foryou-right {
-  padding-top: 28px;
-  padding-left: 29px;
+.profile {
   display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-.foryou-right img {
+.profile img {
   width: 56px;
   height: 56px;
-  left: 858px;
-  top: 111px;
+  margin-right: 17px;
 }
 
-.name-1 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  padding-left: 17px;
-  margin-bottom: 1px;
-}
-
-.name-below {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+.profile-suggestion {
   display: flex;
-  padding-left: 17px;
-  margin-top: 1px;
-}
-
-.names-beside{
-  padding-top: 10px;
-}
-
-.container2 {
-  display: flex;
-}
-
-.suggestions {
-  padding-left: 29px;
-  padding-top: 5px;
-}
-
-.span-suggestions1 {
-  padding-right: 190px;
-  margin-bottom: 15px;
-}
-
-.suggestions-foryou {
-  padding-right: 180px;
-  width: 117px;
-  height: 15px;
-  left: 858px;
-  top: 191px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8E8E8E;
-}
-
-.seeall{
-  width: 55px;
-  height: 15px;
-  left: 1095px;
-  top: 191px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: #262626;
-  margin-left: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .profile-follow {
   display: flex;
-  padding-right: 150px;
+  flex-direction: row;
+  align-items: center;
 }
 
-.profile-follow img{
+.profile-follow img {
   width: 32px;
   height: 32px;
-  left: 858px;
-  top: 223px;
-  background: url(.png);
-  border-radius: 16px;
-  padding-top: 10px;
+  margin-right: 11px;
 }
 
-.profile-follow2 img{
-  width: 32px;
-  height: 32px;
-  left: 858px;
-  top: 318px;
-  background: url(.png);
-  border-radius: 16px;
-}
-
-.profile-follow2 {
-  display: flex;
-  padding-right: 150px;
-  padding-top: 15px;
-}
-
-.profile-follow span{
-  padding-left: 10px;
-}
-
-.span-suggestions2 {
-  padding-top: 10px;
-}
-
-.span-suggestions3 {
-  padding-left: 2px;
-}
-
-.redbullracing {
-  width: 126px;
-  height: 14px;
-  left: 901px;
-  top: 224px;
+.maxverstappen1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -359,72 +280,81 @@ main {
   color: #262626;
 }
 
-.follow-you-span {
-  width: 143px;
-  height: 11px;
-  left: 901px;
-  top: 244px;
+.redbullracing {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8E8E8E;
-  padding-right: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #262626;
 }
 
-.follow-you-span2 {
-  width: 143px;
-  height: 11px;
-  left: 901px;
-  top: 244px;
+.max-Verstappen {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8E8E8E;
-  padding-right: 20px;
-  padding-left: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8e8e8e;
 }
 
-.follow-span {
-  width: 36px;
-  height: 11px;
-  left: 1114px;
-  top: 235px;
+.suggestion-section {
+  display: flex;
+  flex-direction: column;
+}
+.suggestion-for-you {
+  margin-bottom: 18px;
+}
+
+.suggestion {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  color: #139EF2;
-  margin-left: 180px;
-  margin-top: 20px;
+  color: #8e8e8e;
 }
 
-.follow-span2 {
-  width: 36px;
-  height: 11px;
-  left: 1114px;
-  top: 235px;
+.see-all {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  color: #139EF2;
-  margin-left: 189px;
-  margin-top: 13px;
+  display: flex;
 }
 
-.p1{
+.suggestion-for-you {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.follow-you {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8e8e8e;
+}
+
+.follow {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #139ef2;
+}
+
+.p1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
   line-height: 13px;
-  color: #C7C7C7;
+  color: #c7c7c7;
   padding-top: 85px;
 }
 
@@ -440,17 +370,17 @@ main {
   line-height: 13px;
   display: flex;
   align-items: center;
-  
-  color: #C7C7C7;
+
+  color: #c7c7c7;
 }
 
-.instagram-name-mobile{
+.instagram-name-mobile {
   margin-left: 150px;
 }
 
 @media (min-width: 614px) {
-  .instagram-name-mobile{
-      display: none;
+  .instagram-name-mobile {
+    display: none;
   }
 
   .right-header {
@@ -458,51 +388,30 @@ main {
   }
 }
 
-@media (max-width: 935px){
-  .foryou-right {
+@media (max-width: 935px) {
+  .column-2 {
     display: none;
   }
-  .suggestions{
-    display: none;
-  }
-  main{
+  main {
     margin-left: 150px;
     padding-left: 150px;
   }
-  header{
+  header {
     padding-left: 60px;
   }
-
 }
 
-@media (max-width: 613px){
-  .instagram-name-web{
-      display: none;
+@media (max-width: 613px) {
+  .instagram-name-web {
+    display: none;
   }
   .rect {
     display: none;
   }
-  input{
+  input {
     display: none;
   }
-  .right-header{
+  .right-header {
     display: none;
   }
-
-  .foryou-right {
-    display: none;
-  }
-
-  .suggestions{
-    display: none;
-  }
-
-  .line {
-    width: 100%;
-  }
-
-  main{
-    padding-left: 10px;
-  }
-
 }
