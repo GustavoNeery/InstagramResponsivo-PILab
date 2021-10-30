@@ -389,15 +389,23 @@ main {
 }
 
 @media (max-width: 935px) {
-  .column-2 {
+  .profile {
     display: none;
   }
+  .suggestion-section {
+    display: none;
+  }
+
+  .about-last {
+    display: none;
+  }
+
   main {
     margin-left: 150px;
     padding-left: 150px;
   }
   header {
-    padding-left: 60px;
+    padding-left: 130px;
   }
 }
 
@@ -413,5 +421,12 @@ main {
   }
   .right-header {
     display: none;
+  }
+  .paper-plane {
+    margin-left: 150px;
+  }
+
+  .column-1 {
+    margin-left: 10px;
   }
 }
